@@ -1,1 +1,7 @@
 <h2>Pagina de Gastos</h2>
+
+<app-frm-gastos [GastoParaEditar]="GastoParaEditar()"  (GastoAgregado)="agregarGasto($event)" (editame)="editandolo($event)" ></app-frm-gastos>
+
+<app-listado-gatos  [Gastos]="gastos()" (gastoSeleccionado)="selecciongasto($event)" (idEliminado)="eliminagasto($event)"></app-listado-gatos>
+
+
